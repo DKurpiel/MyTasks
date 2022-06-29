@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+            
+}
+
+html {
+    font-size: 65%;
+}
+body {
+    background: #0d0d0d;
+}
+
+.container {
+    background: #0d0d0d;
+    padding-bottom: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+.wrapper {
+    padding: 50px;
+    width: 800px;
+    background-image: linear-gradient(#3F4B59, #333D46);
+    color: #fff;
+    text-align: center;
+    border: 1px solid #1C232D;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #1C232D;
+}
+
+.wrapper h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.wrapper p {
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.app-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-left, .section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.app-body input {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 60px;
+}
+
+.app-body input, .app-body select {
+    color: #fff;
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+.app-body select {
+    padding-top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.app-body option {
+    color: #333;
+    font-size: 20px;
+}
+
+.swap {
+    align-self: flex-end;
+    margin: 5px;
+    padding: 5px 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #1C232D;
+}
+
+.wrapper .rate-info {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 450px) 
+{
+    html 
+    {
+      font-size: 50%;
+    }
+}
