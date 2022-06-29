@@ -1,0 +1,67 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    z-index: 1000;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    padding: 1rem;
+    text-align: center;
+    background: #1a1a1a;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    color: #fff;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+.navbar a i {
+    color: crimson;
+    padding-right: 1rem;
+}
+
+.navbar a:hover {
+    background: crimson;
+    padding-bottom: 3rem;
+}
+
+.navbar a:hover i {
+    color: #fff;
+}
+
+
+@media (max-width: 768px) 
+{
+    .navbar a i 
+    {
+        font-size: 1.5rem;
+    }
+    .navbar a span 
+    {
+        display: none;
+    }
+    .navbar a:hover 
+    {
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 450px) 
+{
+    html 
+    {
+      font-size: 50%;
+    }
+}

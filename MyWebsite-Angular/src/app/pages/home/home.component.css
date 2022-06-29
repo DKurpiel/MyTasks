@@ -1,0 +1,126 @@
+.home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.home .upper {
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #aaa;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.home .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    text-align: center;
+}
+
+.home .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+}
+
+.home .image img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 20%;
+}
+
+
+.home .content h3 {
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.home .content span {
+    font-size: 1.5rem;
+    color: crimson;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.home .content p {
+    font-size: 1rem;
+    color: #aaa;
+    padding-bottom: 1rem;
+}
+
+.home .button {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: crimson;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem 1rem; 
+}
+
+.button i {
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    background: #fff;
+    color: crimson;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+.button:hover i {
+    margin-left: 1rem;
+}
+
+
+
+@media (max-width: 740px) 
+{
+
+    .home .image img
+    {
+        height: 15rem;
+        width: 15rem;
+        margin-top: 1rem;
+    }
+    .home .content {
+        text-align: center;
+    }
+    .home .content h3 
+    {
+        font-size: 2rem;
+    }
+      .home .content span 
+    {
+        font-size: 1rem;
+    }
+    .home .content p 
+    {
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media (max-width: 450px) 
+{
+    html 
+    {
+      font-size: 50%;
+    }
+}

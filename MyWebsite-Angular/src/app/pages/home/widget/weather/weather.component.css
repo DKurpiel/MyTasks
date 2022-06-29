@@ -1,0 +1,21 @@
+* {
+    display: flex;
+    margin: 10px;
+}
+
+@media (max-width: 768px) 
+{
+    #divWeatherMain {
+        font-size: 0.7rem;
+        
+    }
+    
+}
+
+@media (max-width: 450px) 
+{
+    html 
+    {
+      font-size: 50%;
+    }
+}

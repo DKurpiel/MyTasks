@@ -1,0 +1,133 @@
+.heading {
+    color: #fff;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio .box-container {
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+    margin-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 5rem;
+}
+
+.portfolio .box-container .box {
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio .box-container .box:hover .content {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+}
+
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.portfolio .box-container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+    -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+.portfolio .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.portfolio .box-container .box .content p {
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 2;
+    color: #aaa;
+}
+
+.portfolio .box-container .box .content a {
+    font-size: 1.5rem;
+    color: crimson;
+    padding: 10px;
+    border: 2px solid crimson;
+}
+
+.portfolio .box-container .box .content a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+@media (max-width: 768px) 
+{
+    .heading {
+        font-size: 3rem;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .portfolio {
+        text-align: center;
+    }
+    .box-container
+    {
+        font-size: 2rem;
+        margin: 2rem 2rem 1rem -1.5rem;
+        
+    }
+
+    .portfolio .box-container .box {
+        width: 23rem;
+        height: 23rem;
+        
+    }
+
+    
+}
+
+@media (max-width: 450px) 
+{
+    html 
+    {
+      font-size: 50%;
+    }
+}
